@@ -1,93 +1,88 @@
 @import url('https://rsms.me/inter/inter.css');
 
-@media  (max-width:500px){
-    .flex-nav ul {
-        display: flex;
-        list-style: none;
-        width: 450px;
-        height: 92px;
-        left: 0px;
-        top: 0px;
-        margin: 0;
-        padding: 0;
-      }
-      
-      .flex-nav .menu img{
-        margin-top: 8px;
-        margin-right: 8px;
-        margin-left: 120px;
-        width: 24px;
-        height: 24px;
-        padding: 0;
-      }
-      .flex-nav h2 {
-        margin-top: 10px;
-        margin-left: 12px;
-        size: 20px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        line-height: 20px;
-        color: #28352F;
-        ;
-      }
-      
-      .flex-nav li {
-        flex-basis: 200px;
-        flex-grow:10;
-      }
-      
-      .flex-nav .menu  {
-        flex-basis: 100px;
-        flex-grow:1;
-      }
+@media (max-width: 500px) {
+  .flex-nav ul {
+    display: flex;
+    list-style: none;
+    width: 450px;
+    height: 92px;
+    margin: 0;
+    padding: 0;
+  }
 
-      .flex-sec {
-        display: flex;
-        flex-wrap: wrap;
-        width: 500px;
-        justify-content: center;
-        background-image: url(./assets/images/header-illsutration-mobile@2x.png) ;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+  .flex-nav .menu img {
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 120px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
 
-      .flex-sec h2 {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 52px;
-        margin-top: 64px;
-        margin-left: 24px;
-        margin-right: 24px;
-        width: 327px;
-        height: 192px;
-        text-align: center;
-        color: #1d244c;
-      }
-      .flex-sec .second-title {
-        color: #20bc7f;
-      }
+  .flex-nav h2 {
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 20px;
+    color: #28352f;
+  }
 
-      .flex-sec .content {
-        width: 327px;
-        height: 164px;
-        padding-top: 0;
-        margin-left: 24px;
-        font-family: 'Inter', sans-serif;
-        text-align: center;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 20px;
-        color: #172B4D;
-        text-align: center;
-        line-height: 28px;
-      }
+  .flex-nav li {
+    flex-basis: 200px;
+    flex-grow: 10;
+  }
 
-      .box {
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-      }
+  .flex-nav .menu {
+    flex-basis: 100px;
+    flex-grow: 1;
+  }
 
-      
+  .flex-sec {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: center;
+    background-image: url(./assets/images/header-illsutration-mobile@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-    }
+  .flex-sec h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 64px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 327px;
+    height: 192px;
+    text-align: center;
+    color: #1d244c;
+  }
+
+  .flex-sec .second-title {
+    color: #20bc7f;
+  }
+
+  .flex-sec .content {
+    width: 327px;
+    height: 164px;
+    padding-top: 0;
+    margin-left: 24px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #172b4d;
+    line-height: 28px;
+  }
+
+  .box {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+  }
+}
