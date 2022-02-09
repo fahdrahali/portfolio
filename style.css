@@ -90,4 +90,21 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
   }
+
+  .flex-sec-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+  }
+
+  .box-icon {
+    margin-right: 19px;
+    list-style: none;
+  }
+
+  footer .btn-img {
+    margin-top: 70px;
+    margin-left: 225px;
+  }
 }
+
