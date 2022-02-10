@@ -102,6 +102,10 @@
     list-style: none;
   }
 
+  .social {
+    width: 500px;
+  }
+
   footer .btn-img {
     margin-top: 70px;
     margin-left: 225px;
