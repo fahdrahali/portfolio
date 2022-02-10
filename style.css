@@ -152,8 +152,8 @@
   .card {
     border: 1px solid #d0d9d4;
     border-radius: 8px;
-    width:400px;
-    height:550px;
+    width: 400px;
+    height: 550px;
     margin-left: 40px;
     margin-right: 22px;
   }
@@ -162,13 +162,12 @@
     height: 252px;
     border: 1px solid #d0d9d4;
     background-color: #ebeff4;
-    ;
   }
 
   .card .card-title {
     text-align: center;
     justify-content: center;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -189,12 +188,12 @@
   }
 
   .badge {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.03em;;
+    letter-spacing: 0.03em;
     background: #ebf0ee;
     color: #3a4a42;
     border-radius: 4px;
@@ -230,8 +229,8 @@
     background: #36b37f;
     border-radius: 4px;
     border: none;
-    color: white;  
-    font-family: 'Inter';
+    color: white;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
