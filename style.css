@@ -102,7 +102,7 @@
     list-style: none;
   }
 
-  footer {
+  .home-footer {
     width: 500px;
   }
 
@@ -110,8 +110,135 @@
     width: 500px;
   }
 
-  footer .btn-img {
+  .home-footer .btn-img {
     margin-top: 70px;
-    margin-left: 250px;
+    margin-left: 230px;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .works .flex-header {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .works .works-title {
+    display: flex;
+    width: 327px;
+    height: 97px;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    color: #172b4d;
+    margin-left: 40px;
+    margin-right: 26px;
+  }
+
+  .flex-header .indicator {
+    width: 48px;
+    height: 4px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    width:400px;
+    height:550px;
+    margin-left: 40px;
+    margin-right: 22px;
+  }
+
+  .img-card {
+    height: 252px;
+    border: 1px solid #d0d9d4;
+    background-color: #ebeff4;
+    ;
+  }
+
+  .card .card-title {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    color: #3a4a42;
+    width: 295px;
+    height: 57px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+
+  .badge-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 12px;
+    list-style: none;
+  }
+
+  .badge {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;;
+    background: #ebf0ee;
+    color: #3a4a42;
+    border-radius: 4px;
+  }
+
+  .badge-list li .ruby-badge {
+    width: 79px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .css-badge {
+    width: 21px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .js-badge {
+    width: 64px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .html-badge {
+    width: 27px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .btn {
+    width: 122px;
+    height: 48px;
+    background: #36b37f;
+    border-radius: 4px;
+    border: none;
+    color: white;  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-left: 140px;
   }
 }
