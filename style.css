@@ -1,6 +1,6 @@
 @import url('https://rsms.me/inter/inter.css');
 
-@media (max-width: 500px) {
+@media  (max-width: 500px) {
   .flex-nav ul {
     display: flex;
     list-style: none;
@@ -114,6 +114,9 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+    width: 400px;
+    margin: auto;
+    padding: auto;
   }
 
   .works .flex-header {
@@ -270,18 +273,21 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
-    margin-top: 40px;
+    grid-gap:10px;
+    width: 400px;
+    margin: auto;
+    padding: auto;
   }
 
   .about p {
-    margin-left: 70px;
+    margin: auto;
   }
 
   .btn-resume {
     width: 159px;
     height: 48px;
-    margin-left: 170px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 140px;
   }
 
   .flex-card {
@@ -296,9 +302,7 @@
     border: 1px solid #c1c7d0;
     box-sizing: border-box;
     border-radius: 8px;
-    margin-left: 40px;
-    margin-right: 22px;
-    margin-top: 80px;
+    margin: 20px auto;
     list-style: none;
   }
 
@@ -342,4 +346,26 @@
   .icon-about-card {
     margin-top: 40px;
   }
+
+  .title-about {
+    width: 550px;
+    height: 110;
+    margin-left: 60px;
+  }
+
+  .header-about {
+    background-image: url(./assets/images/aboutme-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 130px;
+  }
+
+  .resume-item {
+    width: 440px;
+    height: 100px;
+    margin: auto;
+    background-image: url(./assets/images/aboutme-2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    }
 }
