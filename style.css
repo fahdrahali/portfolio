@@ -55,16 +55,11 @@
   }
 
   .flex-sec h1 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
     margin-top: 64px;
     margin-left: 24px;
     margin-right: 24px;
     width: 327px;
     height: 192px;
-    text-align: center;
-    color: #1d244c;
   }
 
   .flex-sec .second-title {
@@ -72,9 +67,9 @@
     margin-top: 10px;
   }
 
-  .flex-sec .content {
-    width: 327px;
-    height: 164px;
+  .content {
+    width: 351px;
+    height: 189px;
     padding-top: 0;
     margin-left: 24px;
     font-family: 'Inter', sans-serif;
@@ -83,7 +78,7 @@
     font-style: normal;
     font-size: 20px;
     color: #172b4d;
-    line-height: 28px;
+    line-height: 32px;
   }
 
   .box {
@@ -102,7 +97,7 @@
     list-style: none;
   }
 
-  footer {
+  .home-footer {
     width: 500px;
   }
 
@@ -110,8 +105,266 @@
     width: 500px;
   }
 
-  footer .btn-img {
+  .home-footer .btn-img {
     margin-top: 70px;
-    margin-left: 250px;
+    margin-left: 230px;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+  }
+
+  .works .flex-header {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    color: #172b4d;
+  }
+
+  .works .works-title {
+    display: flex;
+    width: 327px;
+    height: 97px;
+    margin-left: 40px;
+    margin-right: 26px;
+  }
+
+  .flex-header .indicator {
+    width: 48px;
+    height: 4px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    width: 400px;
+    height: 550px;
+    margin-left: 40px;
+    margin-right: 22px;
+  }
+
+  .img-card {
+    height: 252px;
+    border: 1px solid #d0d9d4;
+    background-color: #ebeff4;
+  }
+
+  .card .card-title {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    color: #3a4a42;
+    width: 295px;
+    height: 57px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+
+  .badge-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 8px 12px;
+    list-style: none;
+  }
+
+  .badge {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+  }
+
+  .oil {
+    color: #3a4a42;
+  }
+
+  .bg-gray {
+    background: #ebf0ee;
+  }
+
+  .ruby-rails-badge {
+    width: 79px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .css-badge {
+    width: 21px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .js-badge {
+    width: 64px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .codekit-badge {
+    width: 45px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .codepen-badge {
+    width: 55px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .html-badge {
+    width: 27px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .rspec-badge {
+    width: 35px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .btn-projects {
+    width: 122px;
+    height: 48px;
+    margin-left: 140px;
+  }
+
+  .btn-green {
+    background: #36b37f;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 10px;
+    width: 400px;
+    margin: auto;
+  }
+
+  .about p {
+    margin: auto;
+  }
+
+  .btn-resume {
+    width: 159px;
+    height: 48px;
+    margin-top: 50px;
+    margin-left: 160px;
+  }
+
+  .flex-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-card {
+    width: 400px;
+    height: 352px;
+    background: #ebf0ee;
+    border: 1px solid #c1c7d0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 20px auto;
+    list-style: none;
+  }
+
+  .icon-card {
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+
+  .bg-white {
+    background: white;
+  }
+
+  .green {
+    color: #36b37f;
+  }
+
+  .title-card {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #344563;
+    width: 337px;
+    height: 32px;
+    margin-left: -5px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .ruby-badge {
+    width: 38px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .badge-list-about {
+    margin-right: 30px;
+  }
+
+  .icon-about-card {
+    margin-top: 40px;
+  }
+
+  .title-about {
+    width: 550px;
+    height: 80px;
+    margin-left: 60px;
+  }
+
+  .header-about {
+    background-image: url(./assets/images/aboutme-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 130px;
+  }
+
+  .resume-item {
+    width: 480px;
+    height: 100px;
+    margin: auto;
+    background-image: url(./assets/images/aboutme-2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 40px;
   }
 }
