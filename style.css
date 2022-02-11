@@ -1,6 +1,6 @@
 @import url('https://rsms.me/inter/inter.css');
 
-@media  (max-width: 500px) {
+@media (max-width: 500px) {
   .flex-nav ul {
     display: flex;
     list-style: none;
@@ -116,7 +116,6 @@
     justify-content: center;
     width: 400px;
     margin: auto;
-    padding: auto;
   }
 
   .works .flex-header {
@@ -273,10 +272,9 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
-    grid-gap:10px;
+    grid-gap: 10px;
     width: 400px;
     margin: auto;
-    padding: auto;
   }
 
   .about p {
@@ -287,7 +285,7 @@
     width: 159px;
     height: 48px;
     margin-top: 50px;
-    margin-left: 140px;
+    margin-left: 160px;
   }
 
   .flex-card {
@@ -349,7 +347,7 @@
 
   .title-about {
     width: 550px;
-    height: 110;
+    height: 80px;
     margin-left: 60px;
   }
 
@@ -361,11 +359,12 @@
   }
 
   .resume-item {
-    width: 440px;
+    width: 480px;
     height: 100px;
     margin: auto;
     background-image: url(./assets/images/aboutme-2.png);
     background-repeat: no-repeat;
     background-position: left;
-    }
+    margin-bottom: 40px;
+  }
 }
