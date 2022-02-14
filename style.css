@@ -180,8 +180,6 @@
   }
 
   .badge-list {
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     padding: 8px 12px;
     list-style: none;
@@ -206,18 +204,21 @@
   }
 
   .ruby-rails-badge {
+    float: left;
     width: 79px;
     height: 16px;
     padding: 8px 12px;
   }
 
   .css-badge {
+    float: left;
     width: 21px;
     height: 16px;
     padding: 8px 12px;
   }
 
   .js-badge {
+    float: left;
     width: 64px;
     height: 16px;
     padding: 8px 12px;
@@ -236,6 +237,7 @@
   }
 
   .html-badge {
+    float: left;
     width: 27px;
     height: 16px;
     padding: 8px 12px;
