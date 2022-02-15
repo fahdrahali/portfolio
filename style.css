@@ -1,27 +1,32 @@
 @import url('https://rsms.me/inter/inter.css');
 
-@media (max-width: 500px) {
-  .flex-nav ul {
+@media all and (max-width: 500px) {
+  .container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .flex-nav {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
-    width: 450px;
+    width: 500px;
     height: 92px;
-    margin: 0;
     padding: 0;
   }
 
   .flex-nav .menu img {
     margin-top: 8px;
-    margin-right: 8px;
-    margin-left: 120px;
+    margin-left: 140px;
     width: 24px;
     height: 24px;
-    padding: 0;
   }
 
-  .flex-nav .welcome {
+  .welcome {
     margin-top: 10px;
-    margin-left: 20px;
+    text-align: center;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -32,16 +37,6 @@
 
   .flex-nav a {
     text-decoration: none;
-  }
-
-  .flex-nav li {
-    flex-basis: 200px;
-    flex-grow: 10;
-  }
-
-  .flex-nav .menu {
-    flex-basis: 100px;
-    flex-grow: 1;
   }
 
   .flex-sec {
@@ -154,8 +149,6 @@
     border-radius: 8px;
     width: 400px;
     height: 550px;
-    margin-left: 40px;
-    margin-right: 22px;
   }
 
   .img-card {
