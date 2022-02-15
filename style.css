@@ -147,7 +147,7 @@
   .card {
     border: 1px solid #d0d9d4;
     border-radius: 8px;
-    width: 400px;
+    width: auto;
     height: 550px;
   }
 
@@ -360,4 +360,84 @@
     background-position: left;
     margin-bottom: 40px;
   }
-}
+
+  .flex-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-footer h3 {
+    margin: 58px 24px;
+  }
+
+  .flex-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 24px;
+  }
+
+  .flex-form input {
+    width: 100%;
+    border: 1px solid #D0D9D4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6B778C;
+    padding: 15px 16px;
+    margin-bottom: 10px;
+  }
+
+  .flex-form textarea {
+    width: 100%;
+    border: 1px solid #60C095;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px;
+    color: #091E42;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .flex-form button {
+    width: 159px;
+    height: 48px;
+    margin-top: 50px;
+  }
+
+  .flex-footer div {
+    background-image: url(./assets/images/img-contact-form.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .flex-footer div ul {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .flex-footer div ul li {
+    margin: 0 15px;
+  }
+
+  .flex-footer a {
+    width: 400px;
+    height: 189px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    color: #42526E;
+  }
