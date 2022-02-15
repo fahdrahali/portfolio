@@ -365,10 +365,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 58px;
   }
 
   .flex-footer h3 {
-    margin: 58px 24px;
+    text-align: center;
+    margin: 0 50px;
+    height: 300px;
   }
 
   .flex-form {
@@ -377,7 +380,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 24px;
+    margin: 58px 24px;
   }
 
   .flex-form input {
