@@ -1,6 +1,10 @@
 @import url('https://rsms.me/inter/inter.css');
 
 @media all and (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -8,11 +12,19 @@
     justify-content: space-between;
   }
 
+  header {
+    width: 100%;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
   .flex-nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    width: 500px;
+    width: 100%;
     height: 92px;
     padding: 0;
   }
@@ -81,7 +93,7 @@
     font-style: normal;
   }
 
-  .flex-sec-1 {
+  .flex-social {
     display: flex;
     justify-content: center;
     margin-top: 58px;
@@ -93,11 +105,7 @@
   }
 
   .home-footer {
-    width: 500px;
-  }
-
-  .social {
-    width: 500px;
+    width: 100%;
   }
 
   .home-footer .btn-img {
@@ -381,7 +389,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 58px 24px;
+    margin: 100px 24px;
   }
 
   .flex-form input {
@@ -423,6 +431,7 @@
     background-image: url(./assets/images/img-contact-form.png);
     background-repeat: no-repeat;
     background-position: right;
+    width: 100%;
   }
 
   .flex-footer div ul {
@@ -445,4 +454,250 @@
     text-align: center;
     color: #42526e;
   }
+}
+
+
+@media (min-width: 992px) and (max-width: 1100px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+	.mobile-nav {
+    display: none;
+  }
+
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 950px;
+    background-image: url(./assets/images/bg-home-page.png);
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .flex-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 72px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .flex-nav li {
+    margin-left: 32px;
+  }
+
+  .flex-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+  }
+
+  .flex-sec .second-title {
+    color: #20bc7f;
+  }
+
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    font-style: normal;
+    color: #172b4d;
+    margin-bottom: 24px;
+  }
+
+  .content {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #172b4d;
+    line-height: 32px;
+    margin: 0 160px;
+  }
+
+  .flex-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    list-style: none;
+  }
+
+  .flex-social li {
+    margin-left: 20px;
+  }
+
+  .twitter-icon {
+    order: 2;
+  }
+
+  .meduim-icon {
+    order: 3;
+  }
+  
+  .github-icon {
+    order: -1;
+  }
+
+  .home-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-img {
+    margin: 84px 0 512px 0;
+  }
+
+  .indicator {
+    display: none;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 80px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    gap: 20px 15px;
+  }
+
+  .works-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card {
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    width: 100%;
+    height: 400px;
+    justify-self: center;
+  }
+
+  .img-card {
+    height: 200px;
+    border: 1px solid #d0d9d4;
+    background-color: #ebeff4;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-title {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color:#172b4d;
+    margin: 16px;
+  }
+
+  .badge-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    padding: 8px 12px;
+    list-style: none;
+  }
+
+  .badge {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 16px;
+    border-radius: 4px;
+  }
+
+  .oil {
+    color: #172b4d;
+  }
+
+  .bg-gray {
+    background: #ebf0ee;
+  }
+
+  .ruby-rails-badge {
+    padding: 8px 12px;
+  }
+
+  .css-badge {
+    padding: 8px 12px;
+  }
+
+  .js-badge {
+    padding: 8px 12px;
+  }
+
+  .codekit-badge {
+    width: 45px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .codepen-badge {
+    width: 55px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .html-badge {
+    padding: 8px 12px;
+  }
+
+  .rspec-badge {
+    width: 35px;
+    height: 16px;
+    padding: 8px 12px;
+  }
+
+  .btn-projects {
+    width: 112px;
+    height: 40px;
+  }
+
+  .btn-green {
+    background: #36b37f;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-top: 15px;
+  }
+
 }
