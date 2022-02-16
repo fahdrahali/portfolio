@@ -392,7 +392,7 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     color: #6b778c;
     padding: 15px 16px;
@@ -404,7 +404,7 @@
     border: 1px solid #60c095;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 12px;
+    padding: 12px 12px 12px 15px;
     color: #091e42;
     font-family: 'Inter', sans-serif;
     font-style: normal;
