@@ -7,7 +7,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="container">
+ <div class="container">
      <div class="home-section">
       <header>
         <nav class="mobile-nav">
@@ -25,7 +25,6 @@
             </ul>
         </nav>    
     </header>
-    <main>
     <section class="flex-sec">
         <h1 class="box title">Hey there. I'm Fahd <br> <span class="second-title">I'm a software developer</span></h1>
         <p class="box content"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
@@ -44,10 +43,11 @@
         <a href="#"><img class="btn-img" src="./assets/Icons/Disabled.png" alt="button"></a>
     </div>
     </div>
+    <main>
     <section class="works">
         <div>
          <ul class="flex-header">
-            <li><h2 class="title works-title">My Recent Works</h2></li>
+            <li><h2 class="title works-title second-mobile-title">My Recent Works</h2></li>
             <li class="indicator"><img  src="./assets//images/Indicator.png" alt="indicator"></li>
          </ul>
         </div>
@@ -139,18 +139,26 @@
     </div> 
     </section>
     <section class="about">
-        <ul class="header-about">
-            <li class="title-about"><h2 class=" title">About Me</h2></li>
-        </ul>  
-        <p class="content"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        <div class="about-grid">
+         <div class="about-img-left"></div>
+          <div class="about-content">
+           <div class="header-about">
+            <h2 class="title second-mobile-title">About Me</h2>
+        </div>  
+        <p class="content content-text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
             don’t hestiate to contact me.</p>
             <div class="resume-item">
-                <button class="btn-green btn-resume" type="button"> Get My Resume </button>
+                <button class="btn-green btn-resume btn-about" type="button"> Get My Resume </button>
             </div>
-            <div class="flex-card">
+        </div>
+        <div class="about-img-right"></div>
+        </div>
+        <div class="flex-cards">
+
+         <div class="flex-card">
                 <ul class="about-card">
-                    <li><img class="icon-card" src="./assets/images/icon-languages.png" alt="languages"></li>
-                    <li ><h2 class="title-card">Languages</h2></li>
+                   <img class="icon-about-card" src="./assets/images/icon-languages.png" alt="languages">
+                   <h2 class="title-card">Languages</h2>
                     <li class="badge-list-about"><ul class="badge-list">
                         <li class="badge bg-white green js-badge">JavaScript</li>
                         <li class="badge bg-white green ruby-badge">Ruby</li>
@@ -158,7 +166,7 @@
                         <li class="badge bg-white green html-badge">html</li>
                     </ul></li>
                 </ul>    
-            </div>
+         </div>
 
             <div class="flex-card">
                 <ul class="about-card">
@@ -185,10 +193,12 @@
                     </ul></li>
                 </ul>    
             </div>
+        </div> 
     </section>
     </main>
-    <footer class="flex-footer"> 
-       <h3 class="title">I'm always interested in hearing about new projects, 
+    <footer class="flex-footer">
+        <div class="contact-us">
+       <h3 class="title item-title">I'm always interested in hearing about new projects, 
            so if you'd like to chat please get in touch.</h3>
         <form class="flex-form" action="https://formspree.io/f/mqknqpyg" method="post" >
             <input type="text" name="fullname" placeholder="Full name" maxlength="30" required>
@@ -199,6 +209,9 @@
                      cols="30" rows="10" required></textarea>
             <button class="btn-green" type="submit">Get in touch</button>
         </form>
+        <div class="img-contact-form-left"></div>
+        <div class="img-contact-form-center"></div>
+      </div> 
         <div class="social">
             <ul class="flex-social">
                 <li class="box-icon"><a href="#"><img src="./assets/Icons/twitter.png" alt="twitter"></a></li>
@@ -208,7 +221,7 @@
                 <li class="box-icon"><a href="#"><img src="./assets/Icons/angellist.png" alt="angellist"></a></li>
             </ul>
         </div>
-        <a href="#">rahali.fahd@gmail.com</a>
+        <a class="footer-email" href="#">rahali.fahd@gmail.com</a>
     </footer>
 </div>
 </body>
