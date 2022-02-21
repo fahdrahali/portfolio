@@ -158,7 +158,7 @@
   .cards {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
     row-gap: 20px;
     margin-top: 62px;
   }
@@ -397,7 +397,7 @@
 
   .flex-footer h3 {
     text-align: center;
-    margin: 0 75px;
+    margin: 0 75px 150px 75px;
     height: 300px;
   }
 
@@ -405,7 +405,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: 100px auto;
   }
 
