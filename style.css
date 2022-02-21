@@ -1,7 +1,8 @@
 @import url('https://rsms.me/inter/inter.css');
 
-@media all and (max-width: 500px) {
-  body {
+@media (max-width: 500px) {
+
+  * {
     margin: 0;
   }
 
@@ -9,11 +10,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    width: 100vw;
   }
 
   header {
     width: 100%;
+  }
+
+  .mobile-nav {
+    margin-top: 20px;
   }
 
   .desktop-nav {
@@ -75,9 +80,7 @@
   }
 
   .content {
-    width: 351px;
-    height: 189px;
-    padding-top: 0;
+    width: 70%;
     margin-left: 24px;
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -86,6 +89,7 @@
     font-size: 20px;
     color: #172b4d;
     line-height: 32px;
+    margin-top:58px
   }
 
   .box {
@@ -114,11 +118,11 @@
   }
 
   .works {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    width: 400px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 100px auto;
   }
 
   .works .flex-header {
@@ -146,11 +150,18 @@
     margin-right: 26px;
   }
 
-  .flex-header .indicator {
+  .indicator {
     width: 48px;
     height: 4px;
-    margin-left: 180px;
-    margin-bottom: 20px;
+    margin: 24px 0 20px 180px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+    margin-top: 62px;
   }
 
   .card {
@@ -160,13 +171,19 @@
     height: 550px;
   }
 
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .img-card {
     height: 252px;
     border: 1px solid #d0d9d4;
     background-color: #ebeff4;
   }
 
-  .card .card-title {
+  .card-title {
     text-align: center;
     justify-content: center;
     font-family: 'Inter', sans-serif;
@@ -177,8 +194,18 @@
     color: #3a4a42;
     width: 295px;
     height: 57px;
-    margin-left: 60px;
-    margin-top: 20px;
+    margin: 20px 0;
+  }
+
+  .badge-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    padding: 8px 12px;
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 29px;
   }
 
   .badge-list {
@@ -252,7 +279,7 @@
   .btn-projects {
     width: 122px;
     height: 48px;
-    margin-left: 140px;
+    margin-top: 29px;
   }
 
   .btn-green {
