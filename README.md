@@ -1,6 +1,5 @@
 ## Portfolio
-> This is my Potofolio.
-## Built With
+> This is my Potofolio  [![portfolio](https://img.shields.io/badge/Link-Portfolio-<blue>)](https://fahdrahali.github.io/)
 - HTML
 - CSS
 ## Getting Started
