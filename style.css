@@ -1,7 +1,6 @@
 @import url('https://rsms.me/inter/inter.css');
 
 @media (max-width: 500px) {
-
   * {
     margin: 0;
   }
@@ -89,7 +88,7 @@
     font-size: 20px;
     color: #172b4d;
     line-height: 32px;
-    margin-top:58px
+    margin-top: 58px;
   }
 
   .box {
@@ -217,14 +216,6 @@
     margin-bottom: 29px;
   }
 
-  .badge-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 8px 12px;
-    list-style: none;
-  }
-
   .badge {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -319,10 +310,6 @@
     margin: auto;
   }
 
-  .header-about {
-    height: 80px;
-  }
-
   .btn-resume {
     width: 159px;
     height: 48px;
@@ -388,6 +375,7 @@
     background-image: url(./assets/images/aboutme-1.png);
     background-repeat: no-repeat;
     background-position: right;
+    height: 80px;
   }
 
   .resume-item {
