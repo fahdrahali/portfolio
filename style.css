@@ -728,6 +728,13 @@
     text-align: center;
     letter-spacing: 0.02em;
     margin-top: 15px;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 100ms ease-in;
+  }
+
+  .btn-green:hover {
+    background-color: #2c9267;
+    border-radius: 1em;
   }
 
   .flex-about-cards {
