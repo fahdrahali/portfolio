@@ -283,7 +283,7 @@
   }
 
   .btn-green {
-    background: #36b37f;
+    background: #1a5b40;
     border-radius: 4px;
     border: none;
     color: white;
@@ -340,7 +340,7 @@
   }
 
   .green {
-    color: #36b37f;
+    color: #1a563d;
   }
 
   .title-card {
@@ -417,7 +417,7 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     color: #6b778c;
     padding: 15px 16px;
@@ -429,7 +429,7 @@
     border: 1px solid #60c095;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 12px;
+    padding: 12px 12px 12px 15px;
     color: #091e42;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -715,7 +715,7 @@
   }
 
   .btn-green {
-    background: #36b37f;
+    background: #1a5b40;
     border-radius: 4px;
     border: none;
     color: white;
@@ -728,6 +728,13 @@
     text-align: center;
     letter-spacing: 0.02em;
     margin-top: 15px;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 100ms ease-in;
+  }
+
+  .btn-green:hover {
+    background-color: #246a4c;
+    border-radius: 1em;
   }
 
   .flex-about-cards {
@@ -806,7 +813,7 @@
   }
 
   .green {
-    color: #36b37f;
+    color: #1a563d;
   }
 
   .title-card {
