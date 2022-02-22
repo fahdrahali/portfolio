@@ -283,7 +283,7 @@
   }
 
   .btn-green {
-    background: #36b37f;
+    background: #1a5b40;
     border-radius: 4px;
     border: none;
     color: white;
@@ -340,7 +340,7 @@
   }
 
   .green {
-    color: #36b37f;
+    color: #1a563d;
   }
 
   .title-card {
@@ -715,7 +715,7 @@
   }
 
   .btn-green {
-    background: #36b37f;
+    background: #1a5b40;
     border-radius: 4px;
     border: none;
     color: white;
@@ -728,6 +728,13 @@
     text-align: center;
     letter-spacing: 0.02em;
     margin-top: 15px;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 100ms ease-in;
+  }
+
+  .btn-green:hover {
+    background-color: #246a4c;
+    border-radius: 1em;
   }
 
   .flex-about-cards {
@@ -806,7 +813,7 @@
   }
 
   .green {
-    color: #36b37f;
+    color: #1a563d;
   }
 
   .title-card {
