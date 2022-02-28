@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
   <title>Portfolio</title>
 
   <!-- Google Analytics -->
@@ -27,7 +28,7 @@
   <div class="container">
     <div class="home-section">
       <header>
-        <nav class="mobile-nav">
+        <nav id="mobile-nav" class="mobile-nav">
           <ul class="flex-nav">
             <li>
               <a href="#">
@@ -35,45 +36,47 @@
               </a>
             </li>
             <li class="menu">
-              <a href="#"> <img src="./assets/Icons/icon-menu.png" alt="Icon Menu"></a>
+              <a href="#" onclick="displayMenu()"> <img src="./assets/Icons/icon-menu.png" alt="Icon Menu"></a>
             </li>
           </ul>
         </nav>
 
-        <nav class="desktop-nav">
-          <ul class="flex-nav">
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
+        <nav id="mobile-menu" class="desktop-nav mobile-nav-menu">
+          <ul class="flex-nav flex-nav-menu">
+            <button type="button" onclick="hideMenu()" class="btn-close-menu"><img src="./assets/Icons/closed.png" alt="close"></button>
+            <li><a class="link-menu" onclick="displayHomeSection()">Portfolio</a></li>
+            <li><a  class="link-menu" onclick="displayAboutSection()">About</a></li>
+            <li><a  class="link-menu" onclick="displayContactSection()">Contact</a></li>
           </ul>
         </nav>
+
       </header>
-      <section class="flex-sec">
+      <section  id="home" class="flex-sec">
         <h1 class="box title">Hey there. I'm Fahd <br> <span class="second-title">I'm a software developer</span></h1>
         <p class="box content"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <div class="social">
+          <ul class="flex-social">
+            <li class="box-icon twitter-icon">
+              <a href="#"><img src="./assets/Icons/twitter.png" alt="twitter"></a>
+            </li>
+            <li class="box-icon linkedin-icon">
+              <a href="#"><img src="./assets/Icons/linkedin-icon.png" alt="linkedIn"></a>
+            </li>
+            <li class="box-icon meduim-icon">
+              <a href="#"><img src="./assets/Icons/medium.png" alt="meduim"></a>
+            </li>
+            <li class="box-icon github-icon">
+              <a href="#"><img src="./assets/Icons/github.png" alt="github"></a>
+            </li>
+            <li class="box-icon angellist-icon">
+              <a href="#"><img src="./assets/Icons/angellist.png" alt="angellist"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="home-footer">
+          <a href="#"><img class="btn-img" src="./assets/Icons/Disabled.png" alt="button"></a>
+        </div>
       </section>
-      <div class="social">
-        <ul class="flex-social">
-          <li class="box-icon twitter-icon">
-            <a href="#"><img src="./assets/Icons/twitter.png" alt="twitter"></a>
-          </li>
-          <li class="box-icon linkedin-icon">
-            <a href="#"><img src="./assets/Icons/linkedin-icon.png" alt="linkedIn"></a>
-          </li>
-          <li class="box-icon meduim-icon">
-            <a href="#"><img src="./assets/Icons/medium.png" alt="meduim"></a>
-          </li>
-          <li class="box-icon github-icon">
-            <a href="#"><img src="./assets/Icons/github.png" alt="github"></a>
-          </li>
-          <li class="box-icon angellist-icon">
-            <a href="#"><img src="./assets/Icons/angellist.png" alt="angellist"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="home-footer">
-        <a href="#"><img class="btn-img" src="./assets/Icons/Disabled.png" alt="button"></a>
-      </div>
     </div>
     <main>
       <section class="works">
@@ -172,7 +175,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section  id="about" class="about">
         <div class="about-grid">
           <div class="about-img-left"></div>
           <div class="about-content">
@@ -242,7 +245,7 @@
       </section>
 
     </main>
-    <footer class="flex-footer">
+    <footer id="contact" class="flex-footer">
       <div class="contact-us">
         <h3 class="title item-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
         <form class="flex-form" action="https://formspree.io/f/mqknqpyg" method="post">
