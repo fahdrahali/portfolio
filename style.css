@@ -61,8 +61,12 @@
     all: unset;
   }
 
-  .flex-nav-menu a:hover {
-    color: #20bc7f; 
+  .flex-nav a {
+    text-decoration: none;
+  }
+
+  .link-menu:hover {
+    color: #20bc7f;
   }
 
   .btn-close-menu {
@@ -88,10 +92,6 @@
     font-style: normal;
     line-height: 20px;
     color: #28352f;
-  }
-
-  .flex-nav a {
-    text-decoration: none;
   }
 
   .flex-sec {
