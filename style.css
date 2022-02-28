@@ -17,6 +17,7 @@
   }
 
   .mobile-nav {
+    display: block;
     margin-top: 20px;
   }
 
@@ -31,6 +32,37 @@
     width: 100%;
     height: 92px;
     padding: 0;
+  }
+
+  .mobile-nav-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    width: 80vw;
+    height: 100vw;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #3a4a42;
+  }
+
+  .flex-nav-menu li{
+    margin-bottom: 40px;
+  }
+
+  .btn-close-menu {
+    all: unset;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 30px;
   }
 
   .flex-nav .menu img {
@@ -126,6 +158,7 @@
   .works .flex-header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     list-style: none;
     padding-left: 0;
   }
@@ -151,7 +184,7 @@
   .indicator {
     width: 48px;
     height: 4px;
-    margin: 24px 0 20px 180px;
+    margin: 24px 0 20px 0;
   }
 
   .cards {
