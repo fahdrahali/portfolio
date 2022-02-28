@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
   <title>Portfolio</title>
 
   <!-- Google Analytics -->
@@ -27,7 +28,7 @@
   <div class="container">
     <div class="home-section">
       <header>
-        <nav class="mobile-nav">
+        <nav id="mobile-nav" class="mobile-nav">
           <ul class="flex-nav">
             <li>
               <a href="#">
@@ -35,19 +36,20 @@
               </a>
             </li>
             <li class="menu">
-              <a href="#"> <img src="./assets/Icons/icon-menu.png" alt="Icon Menu"></a>
+              <a href="#" onclick="displayMenu()"> <img src="./assets/Icons/icon-menu.png" alt="Icon Menu"></a>
             </li>
           </ul>
         </nav>
 
-        <nav class="desktop-nav mobile-nav-menu">
+        <nav id="mobile-menu" class="desktop-nav mobile-nav-menu">
           <ul class="flex-nav flex-nav-menu">
-            <button class="btn-close-menu"><img src="./assets/Icons/closed.png" alt="close"></button>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
+            <button onclick="hideMenu()" class="btn-close-menu"><img src="./assets/Icons/closed.png" alt="close"></button>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+        
       </header>
       <section class="flex-sec">
         <h1 class="box title">Hey there. I'm Fahd <br> <span class="second-title">I'm a software developer</span></h1>

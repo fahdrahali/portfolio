@@ -35,7 +35,7 @@
   }
 
   .mobile-nav-menu {
-    display: flex;
+    display: none;
     justify-content: center;
   }
 
@@ -43,19 +43,26 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     list-style: none;
     width: 80vw;
-    height: 100vw;
+    height: 100vh;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
     color: #3a4a42;
+    padding-top: 50px;
+    row-gap: 40px;
   }
 
-  .flex-nav-menu li{
-    margin-bottom: 40px;
+  .flex-nav-menu a {
+    all: unset;
+  }
+
+  .flex-nav-menu a:hover {
+    color: #20bc7f; 
   }
 
   .btn-close-menu {
