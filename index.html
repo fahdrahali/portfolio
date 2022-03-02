@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
-  <script src="./index.js"></script>
   <title>Portfolio</title>
 
   <!-- Google Analytics -->
@@ -25,7 +24,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div id="container" class="container">
     <div class="home-section">
       <header>
         <nav id="mobile-nav" class="mobile-nav">
@@ -278,6 +277,18 @@
       <a class="footer-email" href="#">rahali.fahd@gmail.com</a>
     </footer>
   </div>
+<section id="popup" class="popup-desktop hide">
+  <a href="javascript:void(0)" class="popup-desktop-close" onclick="hidePopup()"></a>
+  <div class="popup-desktop-image"></div>
+  <ul class="popup-flex-list">
+    <li class="title-popup-desktop"></li>
+    <li><a href="#"><img src="./assets/images/btn-seesource-popup.png" alt="button see source"></a></li>
+    <li><a href="#"><img src="./assets/images/btn-seelive-popup.png" alt="button see live"></a></li>
+  </ul>
+  <ul class="popup-badge-list">
+  </ul>
+  <p class="popup-desktop-content"></p>
+</section>
+<script src="./index.js"></script>
 </body>
-
 </html>
