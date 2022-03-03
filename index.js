@@ -63,3 +63,26 @@ document.querySelectorAll('.btn-projects').forEach((btn) => {
     document.getElementById('container').classList.add('bg-container-popup');
   });
 });
+
+document.querySelectorAll(".btn-projects").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const hiddenPopupMobile = document.getElementById("popup-mobile");
+    document.querySelector(".popup-mobile-image").style.backgroundImage =
+      project.imgMobile;
+    document.querySelector(".title-popup-mobile").innerHTML = project.title;
+    const list = document.querySelector(".popup-badge-list-mobile");
+
+    for (let i = 0; i < project.skills.length / 2; i += 1) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(project.skills[i]));
+      list.appendChild(li);
+    }
+    document.querySelector(".popup-mobile-content").innerHTML =
+      project.description;
+
+    hiddenPopupMobile.classList.remove("hide");
+    document
+      .getElementById("container")
+      .classList.add("bg-container-popup-mobile");
+  });
+});
