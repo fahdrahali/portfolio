@@ -116,3 +116,11 @@ function checkEmail() {
 
   return valid;
 }
+
+form.addEventListener("submit", (e) => {
+  const isEmailValid = checkEmail();
+
+  if (!isEmailValid) {
+    e.preventDefault();
+  }
+});
