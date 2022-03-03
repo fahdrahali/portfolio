@@ -95,3 +95,24 @@ function hidePopupMobile() {
   document.querySelector('.popup-badge-list-mobile').innerHTML = '';
   hidePopup();
 }
+
+const form = document.getElementById('form');
+const emailInput = document.getElementById('email');
+
+function isEmailValid(email) {
+  return (/^[a-z\-0-9\.\*\#\$\!\~\%\^\&\-\+\?]+@+[a-z\-0-9]+.+[a-z]$/g.test(email));
+}
+
+function checkEmail() {
+  let valid = false;
+  const email = emailInput.value.trim();
+
+  if (isEmailValid(email)) {
+    valid = true;
+  } else {
+    const error = form.querySelector('small');
+    error.textContent = 'Email must be lowercase';
+  }
+
+  return valid;
+}
