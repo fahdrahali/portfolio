@@ -39,6 +39,7 @@ function hidePopup() {
 
 const project = {
   img: "url('./assets/images/popup-image.png')",
+  imgMobile: "url('./assets/images/img-popup-mobile.png')",
   title: 'Keeping track of hundreds of components',
   skills: ['Codekit', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
