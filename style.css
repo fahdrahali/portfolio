@@ -494,6 +494,19 @@
     width: 100%;
   }
 
+  .popup-badge-list-mobile li {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #344563;
+    background-color: #ebecf0;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
   .flex-footer div ul li {
     margin: 0 15px;
   }
@@ -557,7 +570,7 @@
     padding: 0;
   }
 
-  .title-popup-mobile{
+  .title-popup-mobile {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     line-height: 44px;
@@ -586,19 +599,6 @@
     padding: 0;
   }
 
-  .popup-badge-list-mobile li {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #344563;
-    background-color: #ebecf0;
-    padding: 8px 12px;
-    border-radius: 8px;
-  }
-
   .hide {
     display: none;
   }
@@ -606,6 +606,13 @@
   .bg-container-popup-mobile {
     filter: blur(50px);
     background-color: #696767;
+  }
+
+  small {
+    width: 80%;
+    background-color: rgb(206, 108, 108);
+    color: red;
+    padding: 8px 12px;
   }
 }
 
@@ -1172,5 +1179,16 @@
   .bg-container-popup {
     filter: blur(50px);
     background-color: #a3a1a1;
+  }
+
+  small {
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: red;
+    padding: 8px 12px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 12px;
   }
 }
