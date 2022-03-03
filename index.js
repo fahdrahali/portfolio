@@ -29,14 +29,6 @@ function displayContactSection() {
   hideMenu();
 }
 
-function hidePopup() {
-  const hiddenPopupDesktop = document.getElementById('popup');
-  hiddenPopupDesktop.classList.toggle('hide');
-  document.getElementById('container').classList.remove('bg-container-popup');
-  document.querySelector('.popup-badge-list').innerHTML = '';
-  document.querySelector('works').scrollIntoView({ block: 'start' });
-}
-
 const project = {
   img: "url('./assets/images/popup-image.png')",
   imgMobile: "url('./assets/images/img-popup-mobile.png')",
@@ -86,3 +78,22 @@ document.querySelectorAll(".btn-projects").forEach((btn) => {
       .classList.add("bg-container-popup-mobile");
   });
 });
+
+function hidePopup() {
+  const hiddenPopup = document.getElementById('popup');
+  hiddenPopup.classList.add('hide');
+  document.getElementById('container').classList.remove('bg-container-popup');
+  document.querySelector('.popup-badge-list').innerHTML = '';
+  const hiddenPopupMobile = document.getElementById('popup-mobile');
+  hiddenPopupMobile.classList.add('hide');
+  document.getElementById('container').classList.remove('bg-container-popup-mobile');
+  document.querySelector('.popup-badge-list-mobile').innerHTML = '';
+}
+
+function hidePopupMobile() {
+  const hiddenPopupMobile = document.getElementById('popup-mobile');
+  hiddenPopupMobile.classList.add('hide');
+  document.getElementById('container').classList.remove('bg-container-popup-mobile');
+  document.querySelector('.popup-badge-list-mobile').innerHTML = '';
+  hidePopup();
+}
