@@ -29,32 +29,160 @@ function displayContactSection() {
   hideMenu();
 }
 
-const project = {
-  img: "url('./assets/images/popup-image.png')",
-  imgMobile: "url('./assets/images/img-popup-mobile.png')",
-  title: 'Keeping track of hundreds of components',
-  skills: ['Codekit', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
-};
+const projects = [
+  {
+    id: 1,
+    img: "url('./assets/images/project-twitter.jpeg')",
+    imgMobile: "url('./assets/images/img-popup-mobile.png')",
+    title: 'Random Song Lyrics Generator App',
+    skills: ['GitHub', 'Javascript', 'Terminal', 'Codepen'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
+    linkLiveVersion: '',
+    linkSource: '',
+  },
+  {
+    id: 2,
+    img: "url('./assets/images/projectXperia.jpg')",
+    imgMobile: "url('./assets/images/img-popup-mobile.png')",
+    title: 'Multi-Post Stories Gain+Glory',
+    skills: ['Ruby on rails', 'css', 'Javascript', 'HTML'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
+    linkLiveVersion: '',
+    linkSource: '',
+  },
+  {
+    id: 3,
+    img: "url('./assets/images/popup-image.png')",
+    imgMobile: "url('./assets/images/img-popup-mobile.png')",
+    title: 'Keeping track of hundreds of components',
+    skills: ['Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
+    linkLiveVersion: '',
+    linkSource: '',
+  },
+  {
+    id: 4,
+    img: "url('./assets/images/pankaj.jpg')",
+    imgMobile: "url('./assets/images/img-popup-mobile.png')",
+    title: 'Professional Singer Audio App',
+    skills: ['Terminal', 'Codepen', 'css', 'Html'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
+    linkLiveVersion: '',
+    linkSource: '',
+  },
+  {
+    id: 5,
+    img: "url('./assets/images/popup-image.png')",
+    imgMobile: "url('./assets/images/img-popup-mobile.png')",
+    title: 'Social Network for Mental Health',
+    skills: ['Codekit', 'Bootstrap', 'Codepen', 'React'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
+    linkLiveVersion: '',
+    linkSource: '',
+  },
+  {
+    id: 6,
+    img: "url('./assets/images/popup-image.png')",
+    imgMobile: "url('./assets/images/img-popup-mobile.png')",
+    title: 'Professional Art and Printing Data',
+    skills: ['Bootstrap', 'Terminal', 'Codepen', 'Angular'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
+    linkLiveVersion: '',
+    linkSource: '',
+  },
+];
 
-document.querySelectorAll('.btn-projects').forEach((btn) => {
-  btn.addEventListener('click', () => {
+function createTitleSectionWorks() {
+  const liTitle = document.createElement('li');
+  const liImage = document.createElement('li');
+
+  const h2 = document.createElement('h2');
+  const img = document.createElement('img');
+
+  h2.textContent = 'My Recent Works';
+  h2.className = 'title works-title second-mobile-title';
+  liImage.className = 'indicator';
+  img.src = './assets//images/Indicator.png';
+  img.alt = 'indicator';
+
+  liTitle.appendChild(h2);
+  liImage.appendChild(img);
+
+  const ul = document.createElement('ul');
+  ul.className = 'flex-header';
+  ul.appendChild(liTitle);
+  ul.appendChild(liImage);
+
+  const worksSection = document.querySelector('.works');
+  worksSection.appendChild(ul);
+}
+
+createTitleSectionWorks();
+
+function createCardsSectionWorks() {
+  const divCards = document.createElement('div');
+  divCards.className = 'cards';
+
+  projects.map((card) => {
+    const divCard = document.createElement('div');
+    divCard.className = 'card';
+
+    const divImgCard = document.createElement('div');
+    divImgCard.className = 'img-card';
+    divCard.appendChild(divImgCard);
+
+    divImgCard.style.backgroundImage = card.img;
+
+    const divContentCard = document.createElement('div');
+    divContentCard.className = 'card-content';
+
+    const h2 = document.createElement('h2');
+    h2.className = 'card-title';
+    h2.textContent = card.title;
+
+    divContentCard.appendChild(h2);
+
+    const ul = document.createElement('ul');
+    ul.className = 'badge-list';
+    for (let i = 0; i < card.skills.length; i += 1) {
+      const li = document.createElement('li');
+      li.className = 'badge bg-gray oil';
+      li.textContent = card.skills[i];
+      ul.appendChild(li);
+    }
+    divContentCard.appendChild(ul);
+    const button = document.createElement('button');
+    button.className = 'btn-green btn-projects';
+    button.textContent = 'See Project';
+    divContentCard.appendChild(button);
+    divCard.appendChild(divContentCard);
+    divCards.appendChild(divCard);
+  });
+  const worksSection = document.querySelector('.works');
+  worksSection.appendChild(divCards);
+}
+
+createCardsSectionWorks();
+
+const btn = document.querySelectorAll('.btn-projects');
+for (let i = 0; i < btn.length; i += 1) {
+  btn[i].addEventListener('click', () => {
     const hiddenPopupDesktop = document.getElementById('popup');
-    document.querySelector('.popup-desktop-image').style.backgroundImage = project.img;
-    document.querySelector('.title-popup-desktop').innerHTML = project.title;
+    document.querySelector('.popup-desktop-image').style.backgroundImage = projects[i].img;
+    document.querySelector('.title-popup-desktop').innerHTML = projects[i].title;
     const list = document.querySelector('.popup-badge-list');
 
-    for (let i = 0; i < project.skills.length; i += 1) {
+    for (let j = 0; j < projects[i].skills.length; j += 1) {
       const li = document.createElement('li');
-      li.appendChild(document.createTextNode(project.skills[i]));
+      li.appendChild(document.createTextNode(projects[i].skills[j]));
       list.appendChild(li);
     }
-    document.querySelector('.popup-desktop-content').innerHTML = project.description;
+    document.querySelector('.popup-desktop-content').innerHTML = projects[i].description;
 
     hiddenPopupDesktop.classList.remove('hide');
     document.getElementById('container').classList.add('bg-container-popup');
   });
-});
+}
 
 document.querySelectorAll('.btn-projects').forEach((btn) => {
   btn.addEventListener('click', () => {

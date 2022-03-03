@@ -205,7 +205,7 @@
   .card {
     border: 1px solid #d0d9d4;
     border-radius: 8px;
-    width: auto;
+    width: 100%;
     height: 550px;
   }
 
@@ -218,7 +218,8 @@
   .img-card {
     height: 252px;
     border: 1px solid #d0d9d4;
-    background-color: #ebeff4;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .card-title {
@@ -230,8 +231,8 @@
     font-size: 30px;
     line-height: 32px;
     color: #3a4a42;
-    width: 345px;
-    height: 57px;
+    width: 90%;
+    height: 70px;
     margin: 20px 0;
   }
 
@@ -263,6 +264,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     border-radius: 4px;
+    padding: 8px 12px;
   }
 
   .oil {
@@ -318,7 +320,7 @@
   .btn-projects {
     width: 122px;
     height: 48px;
-    margin-top: 29px;
+    margin-top: 10px;
   }
 
   .btn-green {
@@ -753,7 +755,7 @@
 
   .cards {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     gap: 20px 20px;
     margin-top: 52px;
@@ -778,6 +780,8 @@
     height: 200px;
     border: 1px solid #d0d9d4;
     background-color: #ebeff4;
+    background-size: cover;
+    background-position: center;
   }
 
   .card-content {
@@ -792,7 +796,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 20px;
+    line-height: 30px;
     color: #172b4d;
     margin: 16px;
   }
@@ -814,6 +818,7 @@
     font-size: 10px;
     line-height: 16px;
     border-radius: 4px;
+    padding: 8px 12px;
   }
 
   .oil {
