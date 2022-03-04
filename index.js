@@ -100,7 +100,7 @@ const form = document.getElementById('form');
 const emailInput = document.getElementById('email');
 
 function isEmailValid(email) {
-  return (/^[a-z\-0-9\.\*\#\$\!\~\%\^\&\-\+\?]+@+[a-z\-0-9]+.+[a-z]$/g.test(email));
+  return (/^[a-z\-0-9\\.\\*\\#\\$\\!\\~\\%\\^\\&\-\\+\\?]+@+[a-z\-0-9]+.+[a-z]$/g.test(email));
 }
 
 function checkEmail() {
@@ -117,7 +117,7 @@ function checkEmail() {
   return valid;
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   const isEmailValid = checkEmail();
 
   if (!isEmailValid) {
