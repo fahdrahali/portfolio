@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
-  <script src="./index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfolio</title>
 
   <!-- Google Analytics -->
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div id="container" class="container">
     <div class="home-section">
       <header>
         <nav id="mobile-nav" class="mobile-nav">
@@ -43,7 +43,7 @@
 
         <nav id="mobile-menu" class="desktop-nav mobile-nav-menu">
           <ul class="flex-nav flex-nav-menu">
-            <button type="button" onclick="hideMenu()" class="btn-close-menu"><img src="./assets/Icons/closed.png" alt="close"></button>
+            <li><a href="" onclick="hideMenu()" class="btn-close-menu"> <img src="./assets/Icons/closed.png" alt="close"></a></li>
             <li><a class="link-menu" onclick="displayHomeSection()">Portfolio</a></li>
             <li><a  class="link-menu" onclick="displayAboutSection()">About</a></li>
             <li><a  class="link-menu" onclick="displayContactSection()">Contact</a></li>
@@ -79,101 +79,7 @@
       </section>
     </div>
     <main>
-      <section class="works">
-        <div>
-          <ul class="flex-header">
-            <li>
-              <h2 class="title works-title second-mobile-title">My Recent Works</h2>
-            </li>
-            <li class="indicator"><img src="./assets//images/Indicator.png" alt="indicator"></li>
-          </ul>
-        </div>
-        <div class="cards">
-
-          <div class="card">
-            <div class="img-card"></div>
-            <div class="card-content">
-              <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-              <ul class="badge-list">
-                <li class="badge bg-gray oil ruby-rails-badge">Ruby on rails</li>
-                <li class="badge bg-gray oil css-badge">css</li>
-                <li class="badge bg-gray oil js-badge">JavaScript</li>
-                <li class="badge bg-gray oil html-badge">html</li>
-              </ul>
-              <button class="btn-green btn-projects" type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="img-card"></div>
-            <div class="card-content">
-              <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-              <ul class="badge-list">
-                <li class="badge bg-gray oil ruby-rails-badge">Ruby on rails</li>
-                <li class="badge bg-gray oil css-badge">css</li>
-                <li class="badge bg-gray oil js-badge">JavaScript</li>
-                <li class="badge bg-gray oil html-badge">html</li>
-              </ul>
-              <button class="btn-green btn-projects" type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="img-card"></div>
-            <div class="card-content">
-              <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-              <ul class="badge-list">
-                <li class="badge bg-gray oil ruby-rails-badge">Ruby on rails</li>
-                <li class="badge bg-gray oil css-badge">css</li>
-                <li class="badge bg-gray oil js-badge">JavaScript</li>
-                <li class="badge bg-gray oil html-badge">html</li>
-              </ul>
-              <button class="btn-green btn-projects" type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="img-card"></div>
-            <div class="card-content">
-              <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-              <ul class="badge-list">
-                <li class="badge bg-gray oil ruby-rails-badge">Ruby on rails</li>
-                <li class="badge bg-gray oil css-badge">css</li>
-                <li class="badge bg-gray oil js-badge">JavaScript</li>
-                <li class="badge bg-gray oil html-badge">html</li>
-              </ul>
-              <button class="btn-green btn-projects" type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="img-card"></div>
-            <div class="card-content">
-              <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-              <ul class="badge-list">
-                <li class="badge bg-gray oil ruby-rails-badge">Ruby on rails</li>
-                <li class="badge bg-gray oil css-badge">css</li>
-                <li class="badge bg-gray oil js-badge">JavaScript</li>
-                <li class="badge bg-gray oil html-badge">html</li>
-              </ul>
-              <button class="btn-green btn-projects" type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="img-card"></div>
-            <div class="card-content">
-              <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-              <ul class="badge-list">
-                <li class="badge bg-gray oil ruby-rails-badge">Ruby on rails</li>
-                <li class="badge bg-gray oil css-badge">css</li>
-                <li class="badge bg-gray oil js-badge">JavaScript</li>
-                <li class="badge bg-gray oil html-badge">html</li>
-              </ul>
-              <button class="btn-green btn-projects" type="button">See Project</button>
-            </div>
-          </div>
-        </div>
+      <section class="works">   
       </section>
       <section  id="about" class="about">
         <div class="about-grid">
@@ -248,10 +154,11 @@
     <footer id="contact" class="flex-footer">
       <div class="contact-us">
         <h3 class="title item-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-        <form class="flex-form" action="https://formspree.io/f/mqknqpyg" method="post">
+        <form id="form" class="flex-form" action="https://formspree.io/f/mqknqpyg" method="post">
           <input type="text" name="fullname" placeholder="Full name" maxlength="30" required>
-          <input type="email" name="email" placeholder="Email address" required>
+          <input id="email" type="email" name="email" placeholder="Email address" required>
           <textarea name="comment" placeholder="Enter text here" maxlength="500" cols="30" rows="10" required></textarea>
+          <small></small>
           <button class="btn-green" type="submit">Get in touch</button>
         </form>
       </div>
@@ -278,6 +185,31 @@
       <a class="footer-email" href="#">rahali.fahd@gmail.com</a>
     </footer>
   </div>
-</body>
+<section id="popup" class="popup-desktop hide">
+  <a href="javascript:void(0)" class="popup-desktop-close" onclick="hidePopup()"></a>
+  <div class="popup-desktop-image"></div>
+  <ul class="popup-flex-list">
+    <li><h2 class="title-popup-desktop"></h2></li>
+    <li class="item-btn-live"><button class="btn-live btn-green" type="button" >See live<i class="fa fa-power-off" aria-hidden="true"></i></button></li>
+    <li class="item-btn-source"><button class="btn-source btn-green" type="button">See source<i class="fa fa-github" aria-hidden="true"></i></button></li>
+  </ul>
+  <ul class="popup-badge-list">
+  </ul>
+  <p class="popup-desktop-content"></p>
+</section>
 
+<section id="popup-mobile" class="popup-mobile hide">
+  <div class="popup-mobile-image"></div>
+  <a href="javascript:void(0)" class="popup-mobile-close" onclick="hidePopupMobile()"></a>
+  <h2 class="title-popup-mobile"></h2>
+  <ul class="popup-badge-list-mobile">
+  </ul>
+  <p class="popup-mobile-content"></p>
+  <ul class="popup-flex-list">
+    <li class="item-btn-live"><button class="btn-live btn-green" type="button">See live<i class="fa fa-power-off" aria-hidden="true"></i></button></li>
+    <li class="item-btn-source"><button class="btn-source btn-green" type="button">See source<i class="fa fa-github" aria-hidden="true"></i></button></li>
+  </ul>
+</section>
+<script src="./index.js"></script>
+</body>
 </html>
