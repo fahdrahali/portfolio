@@ -338,6 +338,10 @@
     letter-spacing: 0.03em;
   }
 
+  .btn {
+    padding: 8px 12px;
+  }
+
   .about {
     display: grid;
     grid-template-columns: auto;
@@ -574,8 +578,8 @@
 
   .title-popup-mobile {
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 30px;
     text-align: start;
     font-style: normal;
     font-weight: 700;
@@ -612,10 +616,34 @@
 
   small {
     width: 80%;
-    background-color: rgb(206, 108, 108);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
     color: red;
     padding: 8px 12px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 12px;
   }
+}
+
+.btn-source {
+  padding: 8px 12px;
+  width: 150px;
+  height: 50px;
+}
+
+.btn-live {
+  padding: 8px 12px;
+  width: 120px;
+  height: 50px;
+}
+
+.btn-source i {
+  margin-left: 10px;
+}
+
+.btn-live i {
+  margin-left: 10px;
 }
 
 @media (min-width: 992px) {
@@ -1114,16 +1142,18 @@
   .popup-desktop-close {
     background-image: url("./assets/images/popup-close.png");
     background-repeat: no-repeat;
-    height: 60px;
-    width: 50px;
+    height: 50px;
+    width: 60px;
     align-self: end;
+    margin-bottom: 10px;
   }
 
   .popup-desktop-image {
     width: 100%;
-    height: 60%;
+    height: 70%;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 6px;
   }
 
   .popup-flex-list {
@@ -1139,7 +1169,7 @@
 
   .title-popup-desktop {
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 44px;
     text-align: start;
     font-style: normal;
@@ -1151,17 +1181,17 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 22px;
     color: #344563;
-    margin-bottom: 44px;
+    margin-bottom: 15px;
   }
 
   .popup-badge-list {
     display: flex;
     list-style: none;
     column-gap: 10px;
-    margin: 20px 0 36px 0;
+    margin: 20px 0 20px 0;
   }
 
   .popup-badge-list li {
@@ -1195,5 +1225,25 @@
     font-style: normal;
     font-weight: 600;
     margin-top: 12px;
+  }
+
+  .btn-source {
+    padding: 8px 12px;
+    width: 140px;
+    height: 50px;
+  }
+
+  .btn-live {
+    padding: 8px 12px;
+    width: 120px;
+    height: 50px;
+  }
+
+  .btn-source i {
+    margin-left: 10px;
+  }
+
+  .btn-live i {
+    margin-left: 10px;
   }
 }
