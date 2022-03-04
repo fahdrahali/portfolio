@@ -32,33 +32,33 @@ function displayContactSection() {
 const projects = [
   {
     id: 1,
-    img: "url('./assets/images/project-twitter.jpeg')",
+    img: "url('./assets/images/projectXperia.jpg')",
     imgMobile: "url('./assets/images/img-popup-mobile.png')",
     title: 'Random Song Lyrics Generator App',
     skills: ['GitHub', 'Javascript', 'Terminal', 'Codepen'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
-    linkLiveVersion: '',
-    linkSource: '',
+    linkLiveVersion: 'https://www.youtube.com/',
+    linkSource: 'https://github.com/fahdrahali/fahdrahali.github.io',
   },
   {
     id: 2,
-    img: "url('./assets/images/projectXperia.jpg')",
+    img: "url('./assets/images/foss.jpg')",
     imgMobile: "url('./assets/images/img-popup-mobile.png')",
-    title: 'Multi-Post Stories Gain+Glory',
+    title: 'Multi-Post Stories Gain and Glory',
     skills: ['Ruby on rails', 'css', 'Javascript', 'HTML'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
-    linkLiveVersion: '',
-    linkSource: '',
+    linkLiveVersion: 'https://www.youtube.com/',
+    linkSource: 'https://github.com/fahdrahali/fahdrahali.github.io',
   },
   {
     id: 3,
-    img: "url('./assets/images/popup-image.png')",
+    img: "url('./assets/images/projectXperia.jpg')",
     imgMobile: "url('./assets/images/img-popup-mobile.png')",
     title: 'Keeping track of hundreds of components',
     skills: ['Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
-    linkLiveVersion: '',
-    linkSource: '',
+    linkLiveVersion: 'https://www.youtube.com/',
+    linkSource: 'https://github.com/fahdrahali/fahdrahali.github.io',
   },
   {
     id: 4,
@@ -67,28 +67,28 @@ const projects = [
     title: 'Professional Singer Audio App',
     skills: ['Terminal', 'Codepen', 'css', 'Html'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
-    linkLiveVersion: '',
-    linkSource: '',
+    linkLiveVersion: 'https://www.youtube.com/',
+    linkSource: 'https://github.com/fahdrahali/fahdrahali.github.io',
   },
   {
     id: 5,
-    img: "url('./assets/images/popup-image.png')",
+    img: "url('./assets/images/foss.jpg')",
     imgMobile: "url('./assets/images/img-popup-mobile.png')",
     title: 'Social Network for Mental Health',
     skills: ['Codekit', 'Bootstrap', 'Codepen', 'React'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
-    linkLiveVersion: '',
-    linkSource: '',
+    linkLiveVersion: 'https://www.youtube.com/',
+    linkSource: 'https://github.com/fahdrahali/fahdrahali.github.io',
   },
   {
     id: 6,
-    img: "url('./assets/images/popup-image.png')",
+    img: "url('./assets/images/projectXperia.jpg')",
     imgMobile: "url('./assets/images/img-popup-mobile.png')",
     title: 'Professional Art and Printing Data',
     skills: ['Bootstrap', 'Terminal', 'Codepen', 'Angular'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
-    linkLiveVersion: '',
-    linkSource: '',
+    linkLiveVersion: 'https://www.youtube.com/',
+    linkSource: 'https://github.com/fahdrahali/fahdrahali.github.io',
   },
 ];
 
@@ -157,6 +157,7 @@ function createCardsSectionWorks() {
     divContentCard.appendChild(button);
     divCard.appendChild(divContentCard);
     divCards.appendChild(divCard);
+    return 1;
   });
   const worksSection = document.querySelector('.works');
   worksSection.appendChild(divCards);
@@ -184,26 +185,27 @@ for (let i = 0; i < btn.length; i += 1) {
   });
 }
 
-document.querySelectorAll('.btn-projects').forEach((btn) => {
-  btn.addEventListener('click', () => {
+const btnMobile = document.querySelectorAll('.btn-projects');
+for (let i = 0; i < btn.length; i += 1) {
+  btnMobile[i].addEventListener('click', () => {
     const hiddenPopupMobile = document.getElementById('popup-mobile');
-    document.querySelector('.popup-mobile-image').style.backgroundImage = project.imgMobile;
-    document.querySelector('.title-popup-mobile').innerHTML = project.title;
+    document.querySelector('.popup-mobile-image').style.backgroundImage = projects[i].img;
+    document.querySelector('.title-popup-mobile').innerHTML = projects[i].title;
     const list = document.querySelector('.popup-badge-list-mobile');
 
-    for (let i = 0; i < project.skills.length / 2; i += 1) {
+    for (let j = 0; j < projects[i].skills.length; j += 1) {
       const li = document.createElement('li');
-      li.appendChild(document.createTextNode(project.skills[i]));
+      li.appendChild(document.createTextNode(projects[i].skills[j]));
       list.appendChild(li);
     }
-    document.querySelector('.popup-mobile-content').innerHTML = project.description;
+    document.querySelector('.popup-mobile-content').innerHTML = projects[i].description;
 
     hiddenPopupMobile.classList.remove('hide');
     document
       .getElementById('container')
       .classList.add('bg-container-popup-mobile');
   });
-});
+}
 
 function hidePopup() {
   const hiddenPopup = document.getElementById('popup');
