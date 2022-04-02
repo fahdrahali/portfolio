@@ -155,9 +155,9 @@
       <div class="contact-us">
         <h3 class="title item-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
         <form id="form" class="flex-form" action="https://formspree.io/f/mqknqpyg" method="post">
-          <input type="text" name="fullname" placeholder="Full name" maxlength="30" required>
+          <input id="name" type="text" name="fullname" placeholder="Full name" maxlength="30" required>
           <input id="email" type="email" name="email" placeholder="Email address" required>
-          <textarea name="comment" placeholder="Enter text here" maxlength="500" cols="30" rows="10" required></textarea>
+          <textarea id="comment" name="comment" placeholder="Enter text here" maxlength="500" cols="30" rows="10" required></textarea>
           <small></small>
           <button class="btn-green" type="submit">Get in touch</button>
         </form>
@@ -185,6 +185,7 @@
       <a class="footer-email" href="#">rahali.fahd@gmail.com</a>
     </footer>
   </div>
+  
 <section id="popup" class="popup-desktop hide">
   <a href="javascript:void(0)" class="popup-desktop-close" onclick="hidePopup()"></a>
   <div class="popup-desktop-image"></div>

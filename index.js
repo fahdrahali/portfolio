@@ -34,11 +34,11 @@ const projects = [
     id: 1,
     img: "url('./assets/images/projectXperia.jpg')",
     imgMobile: "url('./assets/images/img-popup-mobile.png')",
-    title: 'Random Song Lyrics Generator App',
-    skills: ['GitHub', 'Javascript', 'Terminal', 'Codepen'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione, provident corporis cumque reprehenderit consectetur excepturi obcaecati dignissimos dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel veniam illo quod facilis consequatur odio eaque, commodi eligendi? Repellat ratione.',
+    title: 'Conference',
+    skills: ['Javascript', 'Html', 'Css'],
+    description: 'a conference web site that you can get a ticket to attend a conference',
     linkLiveVersion: 'https://www.youtube.com/',
-    linkSource: 'https://github.com/fahdrahali/fahdrahali.github.io',
+    linkSource: 'https://fahdrahali.github.io/conference/',
   },
   {
     id: 2,
@@ -225,3 +225,70 @@ function hidePopupMobile() {
   document.querySelector('.popup-badge-list-mobile').innerHTML = '';
   hidePopup();
 }
+
+const form = document.getElementById('form');
+const emailInput = document.getElementById('email');
+
+function isEmailValid(email) {
+  return (/^[a-z\-0-9\\.\\*\\#\\$\\!\\~\\%\\^\\&\-\\+\\?]+@+[a-z\-0-9]+.+[a-z]$/g.test(email));
+}
+
+function checkEmail() {
+  let valid = false;
+  const email = emailInput.value.trim();
+
+  if (isEmailValid(email)) {
+    valid = true;
+  } else {
+    const error = form.querySelector('small');
+    error.textContent = 'Email must be lowercase';
+  }
+
+  return valid;
+}
+
+form.addEventListener('submit', (e) => {
+  const isEmailValid = checkEmail();
+
+  if (!isEmailValid) {
+    e.preventDefault();
+  } else {
+    const data = {
+      fullName: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      comment: document.getElementById('comment').value,
+    };
+    localStorage.setItem('data', JSON.stringify(data));
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const data = JSON.parse(localStorage.getItem('data'));
+  if (data) {
+    document.getElementById('name').value = data.fullName;
+    document.getElementById('email').value = data.email;
+    document.getElementById('comment').value = data.comment;
+  }
+});
+
+const fullName = document.getElementById('name');
+const email = document.getElementById('email');
+const comment = document.getElementById('comment');
+
+fullName.addEventListener('change', (e) => {
+  const data = JSON.parse(localStorage.getItem('data'));
+  data.fullName = e.target.value;
+  localStorage.setItem('data', JSON.stringify(data));
+});
+
+email.addEventListener('change', (e) => {
+  const data = JSON.parse(localStorage.getItem('data'));
+  data.email = e.target.value;
+  localStorage.setItem('data', JSON.stringify(data));
+});
+
+comment.addEventListener('change', (e) => {
+  const data = JSON.parse(localStorage.getItem('data'));
+  data.comment = e.target.value;
+  localStorage.setItem('data', JSON.stringify(data));
+});
